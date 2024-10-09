@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 })
 
 app.post("/results", async (req, res) => {
-  const hallticket = req.body;
+  const hallticket = req.body.hallticket;
   let results = "";
 
   const url =
@@ -31,7 +31,6 @@ app.post("/results", async (req, res) => {
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
         },
-        cache: "no-cache",
       });
       const invalidResult =
         '<div class="isa_error">Invalid Hallticket, Please contact Exam Branch if you think this is a mistake.</div>';
