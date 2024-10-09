@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 })
 
 app.post("/results", async (req, res) => {
-  const hallticket = req.body.hallticket;
+  const hallticket = req.body;
   let results = "";
 
   const url =
