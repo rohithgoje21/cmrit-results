@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const path = require('path');
 const axios = require("axios");
 
 const app = express();
@@ -11,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Serve index.html file
 app.get('/', (req, res) => {
-  res.sendFile("index.html")
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 })
 
 app.post("/results", async (req, res) => {

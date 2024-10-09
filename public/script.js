@@ -25,7 +25,7 @@ form.addEventListener("submit", async (e) => {
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
       },
-      body: `hallticket=${hallticket}`,
+      body: `hallticket=${new URLSearchParams({ hallticket })}`,
     });
 
     const html = await response.text();
