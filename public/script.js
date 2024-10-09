@@ -20,7 +20,7 @@ form.addEventListener("submit", async (e) => {
   wrapper.innerHTML = "";
 
   try {
-    const response = await fetch("./results", {
+    const response = await fetch("/results", {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",

@@ -14,7 +14,11 @@ app.get('/', (req, res) => {
   res.sendFile("index.html")
 })
 
-app.post("./results", async (req, res) => {
+app.get('/results', (req, res) => {
+  res.sendFile("index.html")
+})
+
+app.post("/results", async (req, res) => {
   const hallticket = req.body.hallticket;
   let results = "";
 
