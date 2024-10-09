@@ -20,7 +20,7 @@ form.addEventListener("submit", async (e) => {
   wrapper.innerHTML = "";
 
   try {
-    const response = await fetch("/results", {
+    const response = await fetch("https://cm-fvq1-nxtgpg2gy-rohith-gojes-projects.vercel.app/results", {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
