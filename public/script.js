@@ -20,13 +20,14 @@ form.addEventListener("submit", async (e) => {
   wrapper.innerHTML = "";
 
   try {
-    const response = await fetch("/results", {
+    const response = await fetch("/api/results", {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
       },
       body: `hallticket=${new URLSearchParams({ hallticket })}`,
     });
+    
 
     const html = await response.text();
     submitButton.disabled = false;
