@@ -1,7 +1,7 @@
 {
   "redirects": [
-    { "source": "/results",
-      "destination": "/index.html",
+    { "source": "/api/results",
+      "destination": "/public/index.html",
       "permanent": true 
     }
   ]
