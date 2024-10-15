@@ -1,9 +1,0 @@
-
-{
-  "redirects": [
-    { "source": "/results",
-      "destination": "/index.html",
-      "permanent": true 
-    }
-  ]
-}
