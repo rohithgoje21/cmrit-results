@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/results', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile('index.html');
 });
 
 app.post("/results", async (req, res) => {
