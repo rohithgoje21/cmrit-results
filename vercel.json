@@ -1,13 +1,6 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "server.js",
-        "use": "@vercel/node"
-      }
-    ]
   "redirects": [
-    { "source": "/results",
+    { "source": "/api/results",
       "destination": "/index.html",
       "permanent": true 
     }
