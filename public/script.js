@@ -21,7 +21,7 @@ form.addEventListener("submit", async (e) => {
 
   try {
     const response = await fetch("/api/results", {
-      method: "GET",
+      method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
       },
